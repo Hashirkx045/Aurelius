@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURELIUS — Fragrance After Dark</title>
+<meta name="description" content="AURELIUS. Extrait de Parfum composed for the hours after dark. Discover Midnight Oud, Amber Dusk and Dawn Veil.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..800;1,400..800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<a class="skip-link" href="#collection">Skip to collection</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#" class="wordmark" aria-label="AURELIUS home">AURELIUS</a>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <a href="#collection">Collection</a>
+      <a href="#notes">Notes</a>
+      <a href="#signature">Midnight&nbsp;Oud</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#collection" class="btn btn-ghost">Discover</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#collection">Collection</a>
+    <a href="#notes">Notes</a>
+    <a href="#signature">Midnight Oud</a>
+    <a href="#collection" class="btn btn-ghost mobile-cta">Discover</a>
+  </div>
+</header>
+
+<!-- ============ CINEMATIC SCROLL HERO ============ -->
+<section class="cinematic-hero" id="cinematicHero" aria-label="AURELIUS cinematic introduction">
+
+  <div class="hero-sticky">
+    <video
+      id="heroVideo"
+      class="hero-video"
+      src="assets/video/elan-noir-ritual-scrub.mp4"
+      muted
+      playsinline
+      webkit-playsinline="true"
+      preload="auto"
+      poster="assets/keyframes/01-bottle-spotlight.png.jpeg"
+      aria-hidden="true">
+    </video>
+
+    <!-- Static keyframe fallback: used on weak devices, or if the video can't scrub reliably -->
+    <div class="hero-keyframes" id="heroKeyframes" aria-hidden="true">
+      <img class="kf-layer kf-a" id="kfLayerA" src="assets/keyframes/01-bottle-spotlight.png.jpeg" alt="" loading="eager">
+      <img class="kf-layer kf-b" id="kfLayerB" src="assets/keyframes/01-bottle-spotlight.png.jpeg" alt="" loading="eager">
+    </div>
+
+    <div class="hero-vignette"></div>
+    <div class="hero-grade"></div>
+
+    <div class="hero-brandmark">
+      <span class="hero-brandmark-tag">Fragrance After Dark</span>
+      <h1 class="hero-brandmark-name">AURELIUS</h1>
+    </div>
+
+    <div class="scroll-cue" id="scrollCue" aria-hidden="true">
+      <span>Scroll</span>
+      <i></i>
+    </div>
+
+    <!-- Scene text blocks -->
+    <div class="hero-scenes">
+      <article class="hero-scene scene-1" data-scene="1">
+        <p class="scene-eyebrow">Extrait de Parfum</p>
+        <h2 class="scene-heading">Night begins with<br>a single note.</h2>
+        <p class="scene-body">A fragrance composed for the hours when the world becomes quieter.</p>
+      </article>
+
+      <article class="hero-scene scene-2" data-scene="2">
+        <p class="scene-eyebrow">The Awakening</p>
+        <h2 class="scene-heading">Every note rises.</h2>
+        <p class="scene-body">Dark rose, saffron and oud emerge slowly through warmth and shadow.</p>
+      </article>
+
+      <article class="hero-scene scene-3" data-scene="3">
+        <p class="scene-eyebrow">The Composition</p>
+        <h2 class="scene-heading">Elements become<br>emotion.</h2>
+        <p class="scene-body">Rare materials are layered and transformed into an invisible signature.</p>
+      </article>
+
+      <article class="hero-scene scene-4" data-scene="4">
+        <p class="scene-eyebrow">The Extraction</p>
+        <h2 class="scene-heading">Light becomes<br>liquid.</h2>
+        <p class="scene-body">Amber warmth and deep woods dissolve into fragrance.</p>
+      </article>
+
+      <article class="hero-scene scene-5" data-scene="5">
+        <p class="scene-eyebrow">The Ritual</p>
+        <h2 class="scene-heading">Wear the hour<br>after dark.</h2>
+        <p class="scene-body">A trace of rose, leather, smoke and oud that remains after you leave.</p>
+      </article>
+    </div>
+
+    <div class="hero-end-veil" id="heroEndVeil" aria-hidden="true"></div>
+  </div>
+
+  <!-- scroll track height driver -->
+  <div class="hero-track" id="heroTrack"></div>
+</section>
+
+<main>
+
+  <!-- ============ COLLECTION ============ -->
+  <section class="collection" id="collection">
+    <div class="section-intro reveal">
+      <p class="eyebrow">The Collection</p>
+      <h2 class="section-heading">Choose Your Essence</h2>
+      <p class="section-sub">Three compositions created for three different hours of the day.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card card-dawn reveal">
+        <div class="product-media">
+          <img src="assets/products/product-dawn-veil.jpeg" alt="Dawn Veil eau de parfum bottle" loading="lazy" width="900" height="1200">
+        </div>
+        <div class="product-info">
+          <p class="product-subtitle">Eau de Parfum</p>
+          <h3 class="product-name">Dawn Veil</h3>
+          <p class="product-desc">Bergamot and white rose softened by jasmine and clean white musk.</p>
+          <p class="product-notes">Bergamot / White Rose / Musk</p>
+          <a href="#" class="discover-link">Discover <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="product-card card-dusk reveal">
+        <div class="product-media">
+          <img src="assets/products/product-amber-dusk.jpeg" alt="Amber Dusk eau de parfum bottle" loading="lazy" width="900" height="1200">
+        </div>
+        <div class="product-info">
+          <p class="product-subtitle">Eau de Parfum</p>
+          <h3 class="product-name">Amber Dusk</h3>
+          <p class="product-desc">Saffron, glowing amber and vanilla settling into warm tonka bean.</p>
+          <p class="product-notes">Saffron / Amber / Vanilla</p>
+          <a href="#" class="discover-link">Discover <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+
+      <article class="product-card card-midnight reveal">
+        <div class="product-media">
+          <img src="assets/products/product-midnight-oud.jpeg" alt="Midnight Oud extrait de parfum bottle" loading="lazy" width="900" height="1200">
+        </div>
+        <div class="product-info">
+          <p class="product-subtitle">Extrait de Parfum</p>
+          <h3 class="product-name">Midnight Oud</h3>
+          <p class="product-desc">Dark rose, smoked cedar and leather wrapped around a powerful oud heart.</p>
+          <p class="product-notes">Oud / Dark Rose / Leather</p>
+          <a href="#signature" class="discover-link">Discover <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ FRAGRANCE NOTES ============ -->
+  <section class="notes-section" id="notes">
+    <div class="notes-grid">
+      <div class="notes-copy reveal">
+        <p class="eyebrow">The Composition</p>
+        <h2 class="section-heading">Built in layers.</h2>
+
+        <ol class="notes-list">
+          <li class="notes-layer reveal">
+            <h3>Top Notes</h3>
+            <p class="layer-items">Bergamot &middot; Saffron &middot; Black Pepper</p>
+            <p class="layer-desc">The first impression: luminous, sharp and fleeting.</p>
+          </li>
+          <li class="notes-layer reveal">
+            <h3>Heart Notes</h3>
+            <p class="layer-items">Dark Rose &middot; Jasmine &middot; Amber</p>
+            <p class="layer-desc">The emotional centre where warmth and character unfold.</p>
+          </li>
+          <li class="notes-layer reveal">
+            <h3>Base Notes</h3>
+            <p class="layer-items">Oud &middot; Leather &middot; Smoked Cedar &middot; White Musk</p>
+            <p class="layer-desc">The lasting signature of woods, smoke and skin.</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="notes-visual reveal">
+        <div class="notes-glow" aria-hidden="true"></div>
+        <img src="assets/products/product-midnight-oud.jpeg" alt="Midnight Oud bottle among its fragrance layers" loading="lazy" width="900" height="1200">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE PERFUME ============ -->
+  <section class="signature-section" id="signature">
+    <div class="signature-grid">
+      <div class="signature-visual reveal">
+        <div class="signature-light" aria-hidden="true"></div>
+        <img src="assets/products/product-midnight-oud.jpeg" alt="Midnight Oud extrait de parfum, full bottle" loading="lazy" width="1000" height="1300">
+      </div>
+
+      <div class="signature-copy reveal">
+        <p class="eyebrow">Signature Extrait</p>
+        <h2 class="section-heading">Midnight Oud</h2>
+        <p class="signature-desc">A deep and lasting composition where dark rose meets smoked woods, leather and oud.</p>
+
+        <ul class="signature-details">
+          <li>50 ml</li>
+          <li>Extrait de Parfum</li>
+          <li>30% perfume concentration</li>
+          <li>Long-lasting</li>
+          <li>Unisex composition</li>
+        </ul>
+
+        <div class="signature-actions">
+          <a href="#collection" class="btn btn-primary">Experience Midnight Oud</a>
+          <a href="#notes" class="text-link">Explore the notes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-top reveal">
+    <h2 class="footer-wordmark">AURELIUS</h2>
+    <p class="footer-tagline">Fragrance After Dark</p>
+  </div>
+
+  <nav class="footer-nav" aria-label="Footer">
+    <a href="#collection">Collection</a>
+    <a href="#notes">Notes</a>
+    <a href="#signature">Midnight Oud</a>
+    <a href="#contact">Contact</a>
+    <a href="#" target="_blank" rel="noopener">Instagram</a>
+    <a href="#">Privacy</a>
+  </nav>
+
+  <p class="footer-statement">Created for the hours between light and memory.</p>
+
+  <div class="footer-base">
+    <p class="footer-copyright">&copy; <span id="year"></span> AURELIUS. All rights reserved.</p>
+    <p class="footer-credit">Footer developed by <a href="#" class="credit-link" target="_blank" rel="noopener"><span class="credit-name">Hashirkhan</span></a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
